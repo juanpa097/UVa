@@ -1,9 +1,10 @@
 #include "bits/stdc++.h"
 //#include <bits/stdc++.h>
-
+using namespace std;
 
 
 int main () {
+  /*
   int n, b, h, w;
   while (scanf("%d %d %d %d",&n, &b,&h,&w) != EOF) {
     bool can = false;
@@ -29,4 +30,13 @@ int main () {
       printf("stay home\n");
     }
   }
+  */
+  int n;
+  cin >> n;
+  while (n > 0) {
+    int ulDigito = n % 10;
+    n = n / 10;
+    cout << ulDigito;
+  }
+  cout << endl;
 }
