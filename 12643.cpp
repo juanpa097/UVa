@@ -18,12 +18,8 @@ int foo (int n, int a, int b) {
   int p = 1 << n;
   int maxA = max(a,b);
   int maxB = min(a,b);
-  //DEBUG "MaxA: " << maxA << " " << "MaxB: " << maxB << endl;
-  int maxMit1 = p / 2;
-  int maxMit2 = p;
-  //cout << maxMit1 << " " << maxMit2 << endl;
-  if (maxB <= maxMit1 && maxA > maxMit1) return n;
-  //if (n == 1) return n;
+  int mitad = p / 2;
+  if (maxB <= mitad && maxA > mitad) return n;
   else {
     int retA = a % (p / 2);
     int retB = b % (p / 2);
