@@ -8,6 +8,21 @@
 // 0 1 2 3 4 5 6 7 8 9 left
 
 
+/*
+1 1
+1 1
+10 4
+2 5
+6 9
+1 1
+10 10
+5 1
+1 1
+0 0
+
+*/
+
+
 using namespace std;
 
 int main () {
@@ -30,14 +45,14 @@ int main () {
           printf("%d ",left[l]);
         }
 
-        if (right[r] == 0) printf("* ");
+        if (right[r] == 0 || right[r] > s) printf("*\n");
         else {
-          printf("%d \n",right[r]);
+          printf("%d\n",right[r]);
         }
 
-        right[left[l]] = left[l];
-        left[right[l]] = right[l];
-
+        right[left[l]] = right[r];
+        left[right[r]] = left[l];
       }
+      printf("-\n");
   }
 }
