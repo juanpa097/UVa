@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 NO CONFLICT
 CONFLICT
@@ -669,3 +670,9 @@ CONFLICT
 8513
 -16670
 >>>>>>> origin/master
+=======
+NO
+YES
+NO
+YES
+>>>>>>> Stashed changes
