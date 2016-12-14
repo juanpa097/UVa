@@ -73,7 +73,6 @@ int main(int argc, char const *argv[]) {
     printf("%d\n", ans);
     printVec(ansv);
 
->>>>>>> 36f51691ca6a41a01f5a54d437f91def6ae8563a
   }
   return 0;
 }
